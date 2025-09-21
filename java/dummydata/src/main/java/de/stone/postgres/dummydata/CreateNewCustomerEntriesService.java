@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.security.SecureRandom;
 
 @Service
-public class CreateNewEntriesService {
+public class CreateNewKundenEntriesService {
 
     private static final String[] firstnames = {"Karl", "Markus", "Georg", "Hans", "Max", "Else", "Johanna", "Erna", "Emma", "Anna"};
     private static final String[] surnames = {"Schmidt", "Mueller", "Meyer", "Schulz", "Schneider", "Hoffmann", "Becker", "Fischer", "Weber", "Wagner"};
@@ -17,7 +17,7 @@ public class CreateNewEntriesService {
     private static final String[] addresses = {"Bachstrasse", "Dorfstrasse", "Kieferweg", "Tannenstrasse", "Fliederweg", "Sonnenallee", "Fischweg", "Erlenweg", "Baumschulweg", "Bahnhofsgasse"};
 
     private static final SecureRandom rnd = new SecureRandom();
-    private static final int NR_OF_INSERTS = 10;
+    private static final int NR_OF_INSERTS = 1;
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
