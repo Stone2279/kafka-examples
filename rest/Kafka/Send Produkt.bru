@@ -1,0 +1,91 @@
+meta {
+  name: Send Produkt
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8082/topics/rest.inbound.produkt
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/vnd.kafka.json.v2+json; charset=UTF-8
+  Accept: application/vnd.kafka.v2+json
+  : 
+}
+
+body:json {
+  {
+    "records": [
+      {
+        "value": {
+          "PRODUKT_NAME": "Riesen",
+          "MARKE": "Stork",
+          "vorrat": 200
+        }
+      },
+      {
+        "value": {
+          "PRODUKT_NAME": "Goldbaeren",
+          "MARKE": "Haribo",
+          "vorrat": 887
+        }
+      },
+      {
+        "value": {
+          "PRODUKT_NAME": "Saure Pommes",
+          "MARKE": "Haribo",
+          "VORRAT": 345
+        }
+      },
+      {
+        "value": {
+          "PRODUKT_NAME": "TuttiFrutti",
+          "MARKE": "Haribo",
+          "VORRAT": 111
+        }
+      },
+      {
+        "value": {
+          "PRODUKT_NAME": "Color-Rado",
+          "MARKE": "Haribo",
+          "VORRAT": 765
+        }
+      },
+      {
+        "value": {
+          "PRODUKT_NAME": "Eistee",
+          "MARKE": "Rauch",
+          "VORRAT": 50
+        }
+      },
+      {
+        "value": {
+          "PRODUKT_NAME": "Nuss Schokolade",
+          "MARKE": "Milka",
+          "VORRAT": 999
+        }
+      },
+      {
+        "value": {
+          "PRODUKT_NAME": "Fungi Pizza",
+          "MARKE": "Wagner",
+          "VORRAT": 300
+        }
+      },
+      {
+        "value": {
+          "PRODUKT_NAME": "Pesto Verde",
+          "MARKE": "Barilla",
+          "VORRAT": 777
+        }
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

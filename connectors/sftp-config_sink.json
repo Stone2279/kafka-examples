@@ -1,0 +1,17 @@
+{
+	"topics": "mypostgres.produkt",
+	"format.class": "io.confluent.connect.sftp.sink.format.json.JsonFormat",
+	"sftp.username": "admin",
+	"schema.compatibility": "NONE",
+	"storage.class": "io.confluent.connect.sftp.sink.storage.SftpSinkStorage",
+	"connector.class": "io.confluent.connect.sftp.SftpSinkConnector",
+	"sftp.working.dir": "/upload",
+	"schema.generator.class": "io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator",
+	"sftp.password": "admin",
+	"sftp.host": "sftp",
+	"tasks.max": "1",
+	"flush.size": "3",
+	"partitioner.class": "io.confluent.connect.storage.partitioner.DefaultPartitioner",
+	"confluent.topic.bootstrap.servers": "broker:9092",
+	"sftp.port": "22"
+}

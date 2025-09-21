@@ -1,0 +1,12 @@
+{
+	"topic.prefix": "mypostgres.produkt_sql",
+	"incrementing.column.name": "produkt_id",
+	"poll.interval.ms": "5000",
+	"query": "SELECT produkt_id, produkt_name, marke FROM public.produkt",
+	"connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+	"connection.password": "change_me",
+	"mode": "incrementing",
+	"table.types": "TABLE",
+	"connection.url": "jdbc:postgresql://postgresql:5432/conduktor-console",
+	"connection.user": "conduktor"
+}

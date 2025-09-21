@@ -1,0 +1,1 @@
+podman build . -f dockerfile -t connect-debizium:1.0.0

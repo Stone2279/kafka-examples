@@ -1,0 +1,15 @@
+{
+	"topics": "vorrat_by_marke",
+	"auto.evolve": "false",
+	"delete.enabled": "false",
+	"table.name.format": "public.vorrat_by_marke",
+	"insert.mode": "upsert",
+	"connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+	"connection.password": "change_me",
+	"schemas.enable": "true",
+	"pk.mode": "record_key",
+	"pk.fields": "marke",
+	"auto.create": "false",
+	"connection.url": "jdbc:postgresql://postgresql:5432/conduktor-console",
+	"connection.user": "conduktor"
+}

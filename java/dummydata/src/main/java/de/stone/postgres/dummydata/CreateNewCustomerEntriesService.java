@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
 
-@Service
-public class CreateNewKundenEntriesService {
+//@Service
+public class CreateNewCustomerEntriesService {
 
     private static final String[] firstnames = {"Karl", "Markus", "Georg", "Hans", "Max", "Else", "Johanna", "Erna", "Emma", "Anna"};
     private static final String[] surnames = {"Schmidt", "Mueller", "Meyer", "Schulz", "Schneider", "Hoffmann", "Becker", "Fischer", "Weber", "Wagner"};

@@ -1,0 +1,5 @@
+FROM confluentinc/cp-kafka-connect-base:7.8.0
+COPY debezium-connector-postgres /usr/share/java/debezium-connector-postgres
+COPY confluentinc-kafka-connect-jdbc-10.8.0 /usr/share/java/confluentinc-kafka-connect-jdbc
+COPY debezium-connector-jdbc /usr/share/java/debezium-connector-jdbc
+COPY confluentinc-kafka-connect-sftp-3.2.16 /usr/share/java/confluentinc-kafka-connect-sftp
